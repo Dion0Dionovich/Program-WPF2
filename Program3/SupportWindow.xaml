@@ -1,0 +1,16 @@
+﻿<Window x:Class="Program3.SupportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Program3"
+        mc:Ignorable="d"
+        Title="SupportWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Описание проблемы:"/>
+            <TextBox x:Name="TicketText" Height="100" Margin="0,10" TextWrapping="Wrap"/>
+            <Button Content="Отправить" Click="Send_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
